@@ -41,12 +41,17 @@ nav a:hover{
     background-attachment: fixed;
     z-index: -1; /* Keeps it behind the content */
 }
+.content {
+    position: relative;
+    padding: 100px 20px;
+}
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
 }
+
 .project-card {
     background: #1e1e1e99;
     padding: 20px;
