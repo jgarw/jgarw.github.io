@@ -69,5 +69,13 @@
             <p>LinkedIn: <a href="https://linkedin.com/in/josephgarwood">JosephGarwood</a></p>
         </section>
     </div>
+    <script>
+        window.addEventListener('scroll', function() {
+   let scrollTop =  window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+   var currentOffset = '0px ' + scrollTop / -3 + 'px, 100% ' + scrollTop / -3 + 'px';
+   document.getElementById("parallax").style.backgroundPosition = currentOffset;
+});
+
+    </script>
 </body>
 </html>
