@@ -38,7 +38,7 @@ nav a:hover{
     background-image: url('images/background.png');
     background-size: cover;
     background-position: center;
-    height: 200vh;
+    min-height: 200vh;
     z-index: -1;
 }
 .content {
