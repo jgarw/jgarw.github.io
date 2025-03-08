@@ -1,0 +1,63 @@
+body {
+    font-family: 'Hack Nerd Font', monospace;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    padding: 20px;
+    font-size: 24px;
+}
+nav {
+    padding: 10px;
+    background: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.project-card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+}
+.project-card-link{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(85, 85, 85, 0.5); /* Soft glow */
+}
+.project-card:hover{
+    transform: scale(1.02);
+}
+section {
+    padding: 40px 20px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    padding: 5px;
+}
+a {
+    color: #4a90e2;
+}
