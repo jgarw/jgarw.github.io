@@ -68,5 +68,12 @@
             <p>GitHub: <a href="https://github.com/jgarw">jgarw</a></p>
         </section>
     </div>
+    <script>
+        document.addEventListener("scroll", function () {
+    let scrollTop = window.scrollY;
+    document.querySelector(".parallax-background").style.transform = `translateY(${scrollTop * 0.5}px)`;
+});
+
+    </script>
 </body>
 </html>
