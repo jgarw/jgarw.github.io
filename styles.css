@@ -7,15 +7,37 @@ body {
     text-align: center;
 }
 header {
-    padding: 20px;
+    /* padding: 20px; */
     font-size: 24px;
 }
+/* Styling for ABOUT section */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.about-text {
+    /* max-width:px; */
+    width: 50%;
+    text-align: center;
+} 
+
+/* Styling for NAV bar */
 nav {
     padding: 10px;
-    background: #1e1e1e99;
+    /* background: #1e1e1e99; */
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
+    background: rgba(255, 255, 255, 0.084);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(5.3px);
 }
 nav a {
     color: #ffffff;
@@ -25,12 +47,14 @@ nav a {
 }
 
 nav a:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
 }
+/* Styling for BACKGROUND */
 .parallax-background {
     position: fixed;
     opacity: 20%;
-    filter: blur(3px);
+    filter: blur(1.5px);
     top: 0;
     left: 0;
     width: 100%;
@@ -47,15 +71,21 @@ nav a:hover{
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    align-items: stretch;
     padding: 20px;
 }
 
+/* Styling for PROJECTS section */
 .project-card {
-    background: #1e1e1e99;
+    height: 90%;
     padding: 20px;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.084);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(5.3px);
 }
 .project-card-link{
     display: block;
@@ -66,11 +96,68 @@ nav a:hover{
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(56, 56, 56, 0.5); /* Soft glow */
+    box-shadow: 0 0 20px rgba(56, 56, 56, 0.5); 
 }
 .project-card:hover{
     transform: scale(1.02);
+    transition: 0.2s ease-in-out;
 }
+
+/* Styling for SKILLS section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.084);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    padding: 20px;
+    text-align: center;
+}
+
+.skill-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.skill-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #4a90e2;
+}
+/* Styling for CONTACT section */
+.contact-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-button {
+    text-decoration: none;
+    padding: 12px 20px;
+    background: rgba(182, 169, 255, 0.084);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-button:hover {
+    transform: scale(1.1);
+    transition: 0.2 ease-in-out;
+}
+
+
 section {
     padding: 40px 20px;
 }

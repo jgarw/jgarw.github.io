@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Joseph Garwood | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/css/hack.css">
@@ -15,9 +15,16 @@
             <h1>Joseph Garwood</h1>
         </header>
         <section id="about">
-            <h1>About Me</h1>
-            <p>I'm a passionate developer who loves building efficient and scalable applications. I enjoy working with various technologies and continuously learning new skills. Check out my projects below!</p>
+            <div class="about-container">
+                <!-- <img src="images/tux.png" alt="Profile Picture" class="profile-img"> -->
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I'm a passionate developer who loves building efficient and scalable applications. I enjoy working with various technologies and continuously learning new skills.</p>
+                    <p>My main focus is on backend development, security, and automation.</p>
+                </div>
+            </div>
         </section>
+        
         <nav>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
@@ -31,7 +38,7 @@
                     <div class="project-card">
                         <h3>JSH</h3>
                         <img src="images/jsh.png">
-                        <p>A custom Unix shell implemented in C, designed to replicate and enhance core shell functionalities with a user-friendly experience.</p>
+                        <p>A custom Unix shell built in C, designed to enhance core shell functionalities with added user-friendly features and improved command-line interactions.</p>
                     </div>
                 </a>
                 <!-- Create clickable div for project 2 -->
@@ -39,7 +46,7 @@
                     <div class="project-card">
                         <h3>System Monitor</h3>
                         <img src="images/system_monitor.png">
-                        <p>A Python-based security tool designed to help detect potential brute force attacks on SSH.</p>
+                        <p>A Python-based tool for monitoring system security, specifically detecting potential brute-force SSH attacks and providing real-time alerts for suspicious activities.</p>
                     </div>
                 </a>
                 <!-- Create clickable div for project 3 -->
@@ -47,34 +54,52 @@
                     <div class="project-card">
                         <h3>Food Waste Management App</h3>
                         <img src="images/food_waste_management.png">
-                        <p>A Java-based web application designed to help retailers cut down on food waste by allowing consumers and organizations to claim food items marked surplus or for donation.</p>
+                        <p>A Java-based web app that connects retailers, consumers, and organizations to reduce food waste by enabling the donation or redistribution of surplus food items.</p>
                     </div>
                 </a>
             </div>
         </section>
         <section id="skills">
             <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Programming Languages:</strong> Java (JavaFX, Swing), PHP, C, SQL (MySQL, PostgreSQL, Oracle, Microsoft SQL Server), HTML, JavaScript, CSS, Dart</li>
-                <li><strong>Software Knowledge:</strong> Linux (Debian, Arch), IDEs (Eclipse, VS Code, PHPStorm), Git, Jira</li>
-                <li><strong>Containers & Cloud:</strong> OpenShift, Kubernetes, Docker, Azure, AWS</li>
-                <li><strong>Other Tools:</strong> Unit Testing (JUnit), Jenkins, Virtual Machines (VMware, QEMU)</li>
-            </ul>
-        </section>
-        
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Programming</h3>
+                    <p>Java, PHP, C, Python, SQL</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🖥️</div>
+                    <h3>Software & Tools</h3>
+                    <p>Linux, Git, Jira, Eclipse, VS Code</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">☁️</div>
+                    <h3>Cloud & Containers</h3>
+                    <p>Docker, Kubernetes, OpenShift, AWS, Azure</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Other Tools</h3>
+                    <p>Jenkins, Unit Testing, VMs</p>
+                </div>
+            </div>
+        </section>        
         <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:joegarwood@proton.me">joegarwood@proton.me</a></p>
-            <p>GitHub: <a href="https://github.com/jgarw">jgarw</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/josephgarwood">JosephGarwood</a></p>
-        </section>
+            <h2>Contact Me</h2>
+            <div class="contact-links">
+                <a href="mailto:joegarwood@proton.me" class="contact-button">📧 Email Me</a>
+                <a href="https://github.com/jgarw" class="contact-button">💻 GitHub</a>
+                <a href="https://linkedin.com/in/josephgarwood" class="contact-button">🔗 LinkedIn</a>
+            </div>
+        </section>        
     </div>
+    <!-- JavaScript for background scroll -->
     <script>
         window.addEventListener('scroll', function() {
-   let scrollTop =  window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-   var currentOffset = '0px ' + scrollTop / -3 + 'px, 100% ' + scrollTop / -3 + 'px';
-   document.getElementById("parallax").style.backgroundPosition = currentOffset;
-});
+        let scrollTop =  window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var currentOffset = '0px ' + scrollTop / -3 + 'px, 100% ' + scrollTop / -3 + 'px';
+        document.getElementById("parallax").style.backgroundPosition = currentOffset;
+        });
 
     </script>
 </body>
