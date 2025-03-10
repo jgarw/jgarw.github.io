@@ -1,1 +1,107 @@
-Hello world.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Garwood | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/tux.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/css/hack.css">
+</head>
+<body>
+    <div class="parallax-background"></div>
+    <div class="content">
+        <header>
+            <h1>Joseph Garwood</h1>
+        </header>
+        <section id="about">
+            <div class="about-container">
+                <!-- <img src="images/tux.png" alt="Profile Picture" class="profile-img"> -->
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I'm a passionate developer who loves building efficient and scalable applications. I enjoy working with various technologies and continuously learning new skills.</p>
+                    <p>My main focus is on backend development, security, and automation.</p>
+                </div>
+            </div>
+        </section>
+        
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="grid">
+                <!-- Create clickable div for Project 1 -->
+                <a href="https://github.com/jgarw/jsh" class="project-card-link">
+                    <div class="project-card">
+                        <h3>JSH</h3>
+                        <img src="images/jsh.png">
+                        <p>A custom Unix shell built in C, designed to enhance core shell functionalities with added user-friendly features and improved command-line interactions.</p>
+                    </div>
+                </a>
+                <!-- Create clickable div for project 2 -->
+                <a href="https://github.com/jgarw/system_monitor" class="project-card-link">
+                    <div class="project-card">
+                        <h3>System Monitor</h3>
+                        <img src="images/system_monitor.png">
+                        <p>A Python-based tool for monitoring system security, specifically detecting potential brute-force SSH attacks and providing real-time alerts for suspicious activities.</p>
+                    </div>
+                </a>
+                <!-- Create clickable div for project 3 -->
+                <a href="https://github.com/jgarw/foodwastemanagement" class="project-card-link">
+                    <div class="project-card">
+                        <h3>Food Waste Management App</h3>
+                        <img src="images/food_waste_management.png">
+                        <p>A Java-based web app that connects retailers, consumers, and organizations to reduce food waste by enabling the donation or redistribution of surplus food items.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Programming</h3>
+                    <p>Java, PHP, C, Python, SQL</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🖥️</div>
+                    <h3>Software & Tools</h3>
+                    <p>Linux, Git, Jira, Eclipse, VS Code</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">☁️</div>
+                    <h3>Cloud & Containers</h3>
+                    <p>Docker, Kubernetes, OpenShift, AWS, Azure</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Other Tools</h3>
+                    <p>Jenkins, Unit Testing, VMs</p>
+                </div>
+            </div>
+        </section>        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-links">
+                <a href="mailto:joegarwood@proton.me" class="contact-button">📧 Email Me</a>
+                <a href="https://github.com/jgarw" class="contact-button">💻 GitHub</a>
+                <a href="https://linkedin.com/in/josephgarwood" class="contact-button">🔗 LinkedIn</a>
+            </div>
+        </section>        
+    </div>
+    <!-- JavaScript for background scroll -->
+    <script>
+        window.addEventListener('scroll', function() {
+        let scrollTop =  window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var currentOffset = '0px ' + scrollTop / -3 + 'px, 100% ' + scrollTop / -3 + 'px';
+        document.getElementById("parallax").style.backgroundPosition = currentOffset;
+        });
+
+    </script>
+</body>
+</html>
