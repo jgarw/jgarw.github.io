@@ -1,107 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joseph Garwood | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="images/tux.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/css/hack.css">
+    <title>Joseph Garwood</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="parallax-background"></div>
-    <div class="content">
-        <header>
-            <h1>Joseph Garwood</h1>
-        </header>
-        <section id="about">
-            <div class="about-container">
-                <!-- <img src="images/tux.png" alt="Profile Picture" class="profile-img"> -->
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>I'm a passionate developer who loves building efficient and scalable applications. I enjoy working with various technologies and continuously learning new skills.</p>
-                    <p>My main focus is on backend development, security, and automation.</p>
+    
+    <!-- Navigation -->
+    <nav id="desktop-nav">
+        <ul class="nav-links">
+            <li><a href="#About">About</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- <header>
+        <h1>Joseph Garwood</h1>
+    </header> -->
+
+    <!-- About Section -->
+    <section id="About" class="section">
+        <div class="container">
+            <h1>About Me</h1>
+            <p>
+                I'm a passionate developer who loves building efficient and scalable applications. I enjoy working with various technologies and continuously learning new skills.
+                
+                My main focus is on backend development, security, and automation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="Projects" class="section">
+        <div class="container">
+            <h1>Projects</h1>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <a href="https://github.com/jgarw/jsh" target="_blank">
+                        <h3>JSH</h3>
+                        <p>A custom Unix shell in C with enhanced features and improved command-line interactions.</p>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/jgarw/access-control" target="_blank">
+                        <h3>RFID Access Control</h3>
+                        <p>Developed a secure RFID access control system using a Raspberry Pi, Python and PostgreSQL, featuring role-based access control (RBAC).</p>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/jgarw/system_monitor" target="_blank">
+                        <h3>System Monitor</h3>
+                        <p>A Python security tool with a Flask UI that detects SSH attacks and shows live TCP/UDP connections.</p>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/jgarw/FoodWasteManagement" target="_blank">
+                        <h3>Food Waste Reduction App</h3>
+                        <p>A Java web app connecting retailers and consumers to reduce food waste through donations.</p>
+                    </a>
+                </div>    
+                <div class="project-card">
+                    <a href="https://github.com/jgarw/timetable-generator" target="_blank">
+                        <h3>Timetable Generator</h3>
+                        <p>A PHP-based tool that generates optimized course timetables based on defined constraints.</p>
+                    </a>
+                </div>                            
+            </div>
+        </div>
+    </section>
+
+       <!-- Experience Section -->
+    <section id="Experience" class="section">
+        <div class="container">
+            <h1>Experience</h1>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Junior Developer at ISED</h3>
+                        <p>Developed and maintained Drupal modules and plugins using PHP, Docker, and OpenShift.</p>
+                        <span>2024 - Present</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Electronics Repair Technician</h3>
+                        <p>Created secure and scalable applications in Python, Java, and Flask. Developed APIs and integrated databases.</p>
+                        <span>2023 - 2024</span>
+                    </div>
+                </div>
+                <!-- Education Section in Timeline -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Computer Programming Diploma at Algonquin College</h3>
+                        <p></p>
+                        <span>2023 - 2025 (Expected)</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item highlight">
+                    <div class="timeline-content">
+                        <h3>Career Transition</h3>
+                        <p>Transitioned from Equipment and Automotive industry to Software Development.</p>
+                        <span>2023</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Heavy Equipment Technician</h3>
+                        <p>Diagnosed and repaired complex mechanical and electrical systems, applying analytical and problem-solving skills.</p>
+                        <span>2022 - 2023</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Automotive Technician</h3>
+                        <p>Developed strong diagnostic, troubleshooting, and technical skills in high-pressure environments.</p>
+                        <span>2019 - 2022</span>
+                    </div>
                 </div>
             </div>
-        </section>
-        
-        <nav>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="grid">
-                <!-- Create clickable div for Project 1 -->
-                <a href="https://github.com/jgarw/jsh" class="project-card-link">
-                    <div class="project-card">
-                        <h3>JSH</h3>
-                        <img src="images/jsh.png">
-                        <p>A custom Unix shell built in C, designed to enhance core shell functionalities with added user-friendly features and improved command-line interactions.</p>
-                    </div>
-                </a>
-                <!-- Create clickable div for project 2 -->
-                <a href="https://github.com/jgarw/system_monitor" class="project-card-link">
-                    <div class="project-card">
-                        <h3>System Monitor</h3>
-                        <img src="images/system_monitor_dashboard.png">
-                        <p>A Python-based security monitoring tool with a Flask web interface that detects brute-force SSH attacks, provides real-time alerts, and displays current TCP/UDP connections.</p>
-                    </div>
-                </a>
-                <!-- Create clickable div for project 3 -->
-                <a href="https://github.com/jgarw/foodwastemanagement" class="project-card-link">
-                    <div class="project-card">
-                        <h3>Food Waste Management App</h3>
-                        <img src="images/food_waste_management.png">
-                        <p>A Java-based web app that connects retailers, consumers, and organizations to reduce food waste by enabling the donation or redistribution of surplus food items.</p>
-                    </div>
-                </a>
-            </div>
-        </section>
-        <section id="skills">
-            <h2>Technical Skills</h2>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="Skills" class="section">
+            <h1>Skills</h1>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>Programming</h3>
-                    <p>Java, PHP, C, Python, SQL</p>
+                        <h3>Programming</h3>
+                        <p>Java, PHP, Python, C, SQL, Dart</p>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">🖥️</div>
-                    <h3>Software & Tools</h3>
-                    <p>Linux, Git, Jira, Eclipse, VS Code</p>
+                        <h3>Software</h3>
+                        <p>Linux, Git, Jira, Eclipse, VS Code</p>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">☁️</div>
-                    <h3>Cloud & Containers</h3>
-                    <p>Docker, Kubernetes, OpenShift, AWS, Azure</p>
-                </div>
+                        <h3>Cloud & Containers</h3>
+                        <p>Docker, Kubernetes, OpenShift, Azure</p>
+                </div>    
                 <div class="skill-card">
-                    <div class="skill-icon">⚙️</div>
-                    <h3>Other Tools</h3>
-                    <p>Jenkins, Unit Testing, VMs</p>
-                </div>
-            </div>
-        </section>        
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <div class="contact-links">
-                <a href="mailto:joegarwood@proton.me" class="contact-button">📧 Email Me</a>
-                <a href="https://github.com/jgarw" class="contact-button">💻 GitHub</a>
-                <a href="https://linkedin.com/in/josephgarwood" class="contact-button">🔗 LinkedIn</a>
-            </div>
-        </section>        
-    </div>
-    <!-- JavaScript for background scroll -->
-    <script>
-        window.addEventListener('scroll', function() {
-        let scrollTop =  window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-        var currentOffset = '0px ' + scrollTop / -3 + 'px, 100% ' + scrollTop / -3 + 'px';
-        document.getElementById("parallax").style.backgroundPosition = currentOffset;
-        });
+                        <h3>Other Tools</h3>
+                        <p>Jenkins, Unit Testing, VMs</p>
+                </div>      
+        </div>
+    </section>
 
-    </script>
+    <section id="community" class="section">
+        <h1>Community & Contributions</h1>
+        <div class="community-item">
+            <h3>cuHacking Team Lead</h3>
+            <span>March 2025</span>
+            <p>Led a team of four members in a 36 hour hackathon. Focused on developing a full-stack application to connect people in need to food and shelter resources in Ottawa.</p>
+        </div>
+        <div class="community-item">
+            <h3>Drupal WxT Contribution</h3>
+            <span>March 2025</span>
+            <p>Contributed to the Drupal Web Experience Toolkit project by submitting a patch correcting a translation yaml file.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contact" class="section">
+        <div class="container">
+            <h1>Contact</h1>
+            <p>Feel free to reach out to me via:</p>
+            <ul>
+                <li><a href="https://github.com/jgarw" target="_blank">GitHub</a></li>
+                <li><a href="mailto:joegarwood@proton.me">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/josephgarwood" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
+
 </html>
