@@ -115,8 +115,10 @@ header {
 
 /* Hover Effects for Download Button */
 .btn-download:hover{
+    background-color: #ccc;
+    color: #121212;
     transform: scale(1.05);
-    transition: transform 0.3s ease
+    transition: transform 0.3s ease;
 }
 
 
@@ -196,48 +198,69 @@ ul li {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
     gap: 1.5rem;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 
 /* Skills Card Styles */
 .skill-card {
-    /* background-color: #1e1e1e; */
+    background-color: #1e1e1e;
     border-radius: 12px;
     padding: 10px;
-    /* box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); */
-    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #f5f5f5;
 }
 
-.community-item{
-    padding: 20px;
-    /* background-color: #1e1e1e; */
-    gap: 10px;
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.15);
+}
+
+
+/* Community Section */
+.community-item {
+    padding:20px;
+    margin-bottom: 1.5rem; /* Space between items */
 }
 
 /* Contact Section */
 #Contact ul {
     list-style: none;
-    padding: 0;
 }
 
 #Contact li {
     margin-top: 1rem;
 }
 
+i{
+    padding:5px;
+}
+
 #Contact a {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #121212; 
+    color: #ccc;
     text-decoration: none;
-    color: #4da8da;
-    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 2px solid #ccc; 
+    font-weight: bold;
+    text-align: center;
+    width: 180px; 
 }
 
 #Contact a:hover {
-    text-decoration: underline;
+    background-color: #ccc;
+    color: #121212;
+    transform: scale(1.05);
+    transition: opacity 1s, transform 0.3s ease-in-out;
 }
 
 /* Timeline Styles */
@@ -333,6 +356,11 @@ ul li {
 
     .skills-grid{
         grid-template-columns: 1fr;
+    }
+
+    #Contact ul {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
     }
 
     .section {
