@@ -93,12 +93,11 @@ header {
 
 /* Button Container for Equal Sizing */
 .buttons {
-    
     gap: 20px; /* Space between buttons */
 }
 
 /* Common button styles */
-.btn-download, .btn-linkedin {
+.btn-download{
     display: inline-block;
     padding: 10px 10px;
     background-color: #121212; 
@@ -108,16 +107,13 @@ header {
     border: 2px solid #ccc; 
     font-weight: bold;
     text-align: center;
-    width: 200px; 
+    width: 180px; 
     text-align: center;
 }
 
 
 /* Hover Effects for Download Button */
-.btn-download:hover, .btn-linkedin:hover{
-    /* background-color: white;
-    color: #121212;
-    border-color: #121212; */
+.btn-download:hover{
     transform: scale(1.05);
     transition: transform 0.3s ease
 }
