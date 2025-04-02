@@ -75,6 +75,7 @@ header {
     text-align: center;
     filter: blur(3px);
     opacity: 0;
+    transition: opacity 0.5s ease, filter 0.5s ease;
 }
 
 .show {
