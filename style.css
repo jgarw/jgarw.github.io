@@ -87,6 +87,42 @@ header {
     transition: opacity 1s, filter 1s;
 }
 
+#About p{
+    padding: 10px;
+}
+
+/* Button Container for Equal Sizing */
+.buttons {
+    
+    gap: 20px; /* Space between buttons */
+}
+
+/* Common button styles */
+.btn-download, .btn-linkedin {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #121212; 
+    color: #ccc;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #ccc; 
+    font-weight: bold;
+    text-align: center;
+    width: 200px; 
+    text-align: center;
+}
+
+
+/* Hover Effects for Download Button */
+.btn-download:hover, .btn-linkedin:hover{
+    /* background-color: white;
+    color: #121212;
+    border-color: #121212; */
+    transform: scale(1.05);
+    transition: transform 0.3s ease
+}
+
+
 h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
