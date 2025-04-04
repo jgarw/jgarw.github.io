@@ -22,6 +22,24 @@ body {
     border-bottom: 2px solid #333;
 }
 
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute; /* Add this line */
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #f5f5f5;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
 header {
     background-color: #121212;
     color: #f5f5f5;
@@ -345,9 +363,26 @@ i{
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    /* Navigation */
+#desktop-nav {
+    background-color: #1e1e1e;
+    padding: 35px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
     .nav-links {
+        display: none;
         flex-direction: column;
-        gap: 1rem;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 
     .projects-grid {

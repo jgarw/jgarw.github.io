@@ -14,4 +14,13 @@ const observer = new IntersectionObserver((entries) => {
 const scrollElements = document.querySelectorAll('.section');
 scrollElements.forEach((el) => observer.observe(el));
 
+// JavaScript for Hamburger Menu
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+
 
