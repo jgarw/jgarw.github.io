@@ -22,5 +22,15 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
+// Script for dark mode toggle
+const toggle = document.getElementById("theme-toggle");
+const icon = toggle.querySelector("i");
+
+toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    icon.classList.toggle("fa-moon");
+    icon.classList.toggle("fa-sun");
+});
+
 
 
